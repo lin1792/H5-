@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./Mdate/iScroll.js"></script>
+  <script src="./Mdate/Mdate.js"></script>
+</head>
+<body>
+  <div class="registrationForm">
+
+    <div class="title">
+      <div class="left">+</div>
+      <div class="center">应聘登记表</div>
+      <div class="right">...</div>
+    </div>
+
+    <div class="header">
+      <div class="top">XXXX有限公司</div>
+      <div class="bottom">应聘登记表</div>
+    </div>
+
+    <form action="#" method="get" autocomplete="off" class="main">
+      <div class="job com">
+        <div class="head"><span class="must">*</span>应聘岗位</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="time com">
+        <div class="head"><span class="must">*</span>填表日期</div>
+        <div class="input slt"><input id="time" type="text" placeholder="请选择"><span class="timeorient"></span>
+        </div>
+      </div>
+      <div class="name com">
+        <div class="head"><span class="must">*</span>姓名</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="gender com">
+        <div class="head"><span class="must">*</span>性别</div>
+        <div class="input slt"><input id="gender" type="text" placeholder="请选择"><span class="genderorient"></span>
+        </div>
+      </div>
+      <div class="born com">
+        <div class="head"><span class="must">*</span>出生日期</div>
+        <div class="input slt"><input id="born" type="text" placeholder="请选择"><span class="bornorient"></span>
+        </div>
+      </div>
+      <div class="ethnic com">
+        <div class="head"><span class="must">*</span>民族</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="politics com">
+        <div class="head"><span class="must">*</span>政治面貌</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="marriage com">
+        <div class="head"><span class="must">*</span>婚否</div>
+        <div class="input slt"><input id="marriage" type="text" placeholder="请选择"><span class="marriageorient"></span>
+        </div>
+      </div>
+      <div class="healthy com">
+        <div class="head"><span class="must">*</span>健康状况</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="origin com">
+        <div class="head"><span class="must">*</span>籍贯（省、市）</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="tel com">
+        <div class="head"><span class="must">*</span>联系方式</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="email com">
+        <div class="head"><span class="must">*</span>电子邮箱</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="degree com">
+        <div class="head"><span class="must">*</span>学历</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="local com">
+        <div class="head"><span class="must">*</span>现居地</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="employed com">
+        <div class="head"><span class="must">*</span>目前是否在职</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="arrivaltime com">
+        <div class="head"><span class="must">*</span>预计到岗时间</div>
+        <div class="input slt"><input id="arrivaltime" type="text" placeholder="请选择"><span
+            class="arrivaltimeorient"></span>
+        </div>
+      </div>
+      <div class="salary com">
+        <div class="head"><span class="must">*</span>期望薪资</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="language com">
+        <div class="head"><span class="must">*</span>外语水平</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="computer com">
+        <div class="head"><span class="must">*</span>计算机水平</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="educate com">
+        <div class="head"><span class="must">*</span>教育经历（请至少完整填写一行）</div>
+        <div class="input">
+          <table>
+            <tr>
+              <th class="left-top">时间</th>
+              <th>毕业院校</th>
+              <th>专业</th>
+              <th>详细情况</th>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="workexperience com">
+        <div class="head"><span class="must">*</span>工作经历（请至少完整填写一行没有则写 <span class="must">'无'</span> ）</div>
+        <div class="input">
+          <table>
+            <tr>
+              <th class="left-top">时间</th>
+              <th>毕业院校</th>
+              <th>专业</th>
+              <th>详细情况</th>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+            <tr>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+              <td contentEditable="true"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="honor com">
+        <div class="head">个人荣誉</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="like com">
+        <div class="head">兴趣特长</div>
+        <div class="input"><input type="text" placeholder="请输入"></div>
+      </div>
+      <div class="selfappraise com">
+        <div class="head"><span class="must">*</span>自我评价</div>
+        <div class="input"><textarea name="" id="" cols="49" rows="5" placeholder="请输入"></textarea></div>
+      </div>
+      <div class="btn">
+        <input type="submit" value="提交" />
+      </div>
+    </form>
+    <!-- 婚否弹窗 -->
+    <div id="myMarriage" class="modal">
+      <div class="big">
+        <div class="modal-content">
+          <span class="close">取消</span>
+          <span class="firmation">确定</span>
+          <div class="lineone"></div>
+          <div class="linetow"></div>
+          <div class="neirong">
+            <div class="one col">已婚</div>
+            <div class="tow">未婚</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 性别弹窗 -->
+    <div id="myGender" class="modal">
+      <div class="big">
+        <div class="modal-content">
+          <span id="genderClose" class="close">取消</span>
+          <span id="genderFirmation" class="firmation">确定</span>
+          <div id="genderLineone" class="lineone"></div>
+          <div id="genderLinetow" class="linetow"></div>
+          <div id="genderNeirong" class="neirong">
+            <div id="genderOne" class="one genderCol">男</div>
+            <div id="genderTow" class="tow">女</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 婚姻 -->
+  <script>
+    // 获取元素
+    var myMarriage = document.getElementById('myMarriage');
+    var btn = document.getElementById("marriage");
+    var close = document.querySelector('.close');
+    var firmation = document.querySelector('.firmation');
+    var sltone = document.querySelector('.one')
+    var slttow = document.querySelector('.tow')
+    var neirong = document.querySelector('.neirong')
+    var col = document.querySelector('.col')
+    var orient = document.querySelectorAll('.orient')
+    var cont = ''
+
+    //创建点击事件
+    // 婚姻
+    btn.onclick = function () {
+      myMarriage.style.display = "block";
+      cont = col.innerText
+    }
+
+    close.onclick = function () {
+      myMarriage.style.display = "none";
+    }
+    firmation.onclick = function () {
+      myMarriage.style.display = "none";
+      btn.value = cont
+    }
+
+    sltone.onclick = function () {
+      neirong.style.paddingTop = "40px";
+      sltone.classList.add('col')
+      slttow.classList.remove('col')
+      cont = sltone.innerText
+    }
+    slttow.onclick = function () {
+      neirong.style.paddingTop = "20px";
+      slttow.classList.add('col')
+      sltone.classList.remove('col')
+      cont = slttow.innerText
+    }
+  </script>
+  <!-- 性别 -->
+  <script>
+    // 获取元素
+    var myGender = document.getElementById('myGender');
+    var genderBtn = document.getElementById("gender");
+    var genderClose = document.getElementById('genderClose');
+    var genderFirmation = document.getElementById('genderFirmation');
+    var genderOne = document.getElementById('genderOne')
+    var genderTow = document.getElementById('genderTow')
+    var genderNeirong = document.getElementById('genderNeirong')
+    var genderCol = document.querySelector('.genderCol')
+    var asd = document.querySelector('asd')
+    var orient = document.querySelector('.orient')
+    var cont = ''
+
+    //创建点击事件
+    // 性别
+    genderBtn.onclick = function () {
+      myGender.style.display = "block";
+      cont = genderCol.innerText
+    }
+
+    genderClose.onclick = function () {
+      myGender.style.display = "none";
+    }
+    genderFirmation.onclick = function () {
+      myGender.style.display = "none";
+      genderBtn.value = cont
+    }
+
+    genderOne.onclick = function () {
+      genderNeirong.style.paddingTop = "40px";
+      genderOne.classList.add('genderCol')
+      genderTow.classList.remove('genderCol')
+      cont = genderOne.innerText
+    }
+    genderTow.onclick = function () {
+      genderNeirong.style.paddingTop = "20px";
+      genderTow.classList.add('genderCol')
+      genderOne.classList.remove('genderCol')
+      cont = genderTow.innerText
+    }
+
+  </script>
+  <!-- 时间 -->
+  <script>
+    new Mdate("time", {
+      beginYear: "1980"
+    });
+    new Mdate("born", {
+      beginYear: "1980"
+    });
+    new Mdate("arrivaltime", {
+      beginYear: "1980"
+
+    });
+  </script>
+  <!-- 监听输入框 -->
+  <script>
+    var time = document.getElementById('time');
+    var timeorient = document.querySelector('.timeorient')
+
+    var gender = document.getElementById('gender');
+    var genderorient = document.querySelector('.genderorient')
+
+    var born = document.getElementById('born');
+    var bornorient = document.querySelector('.bornorient')
+
+    var marriage = document.getElementById('marriage');
+    var marriageorient = document.querySelector('.marriageorient')
+
+    var arrivaltime = document.getElementById('arrivaltime');
+    var arrivaltimeorient = document.querySelector('.arrivaltimeorient')
+
+    var timeold = time.value;
+    var genderold = gender.value
+    var bornold = born.value
+    var marriageold = marriage.value
+    var arrivalold = arrivaltime.value
+    setInterval(function () {
+      let t = time.value;
+      if (t != timeold) {
+        timeold = t;
+        timeorient.style.display = "none"
+      }
+
+      let g = gender.value;
+      if (g != genderold) {
+        genderold = g;
+        genderorient.style.display = "none"
+      }
+
+      let b = born.value;
+      if (b != bornold) {
+        bornold = b;
+        bornorient.style.display = "none"
+      }
+
+      let m = marriage.value;
+      if (m != marriageold) {
+        marriageold = m;
+        marriageorient.style.display = "none"
+      }
+
+      let a = arrivaltime.value;
+      if (a != arrivalold) {
+        arrivalold = a;
+        arrivaltimeorient.style.display = "none"
+      }
+    }, 5);
+  </script>
+</body>
+</html>

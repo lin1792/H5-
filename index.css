@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  position: relative;
+}
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 43px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.title .left {
+  position: absolute;
+  top: 5px;
+  left: 5vw;
+  transform: rotate(45deg);
+  text-align: center;
+  font-size: 26px;
+}
+.title .center {
+  margin: auto;
+  width: 28vw;
+  font-size: 15px;
+}
+.title .right {
+  position: absolute;
+  top: -2px;
+  right: 4.5vw;
+  text-align: center;
+  font-size: 26px;
+}
+.header {
+  height: 55px;
+  margin-top: 43px;
+  background-color: #6f97bb;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+.header .top {
+  padding-top: 10px;
+  font-size: 15px;
+}
+.header .bottom {
+  font-size: 13px;
+}
+.main {
+  border-radius: 10px;
+  margin-left: 3.5vw;
+}
+.main .com {
+  height: 60px;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 8px;
+  overflow: hidden;
+}
+.main .com .head {
+  margin-top: 10px;
+}
+.main .com .head .must {
+  color: red;
+}
+.main .com .input {
+  margin-top: 9px;
+}
+.main .com .input input {
+  width: 99%;
+  border: none;
+  outline: none;
+}
+.main .com .slt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 26px;
+  border: 1px solid #d6d6d6;
+  margin-left: 1.5vw;
+}
+.main .com .slt input {
+  caret-color: transparent;
+  display: block;
+}
+.main .com .slt input::placeholder {
+  color: black;
+  text-align: center;
+}
+.main .com .slt .timeorient,
+.main .com .slt .genderorient,
+.main .com .slt .bornorient,
+.main .com .slt .marriageorient,
+.main .com .slt .arrivaltimeorient {
+  display: block;
+  position: absolute;
+  top: 7.5px;
+  right: 139px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+}
+.main .com table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 5px;
+  width: 100%;
+  table-layout: fixed;
+}
+.main .com table tr {
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.main .com table tr :first-child {
+  border-left: 1px solid black;
+}
+.main .com table tr th {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.main .com table tr th:first-child {
+  border-top-left-radius: 7px;
+}
+.main .com table tr th:last-child {
+  border-top-right-radius: 7px;
+}
+.main .com table tr td {
+  overflow: hidden;
+  white-space: nowrap;
+  outline: none;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.main .com table tr:last-of-type :first-child {
+  border-bottom-left-radius: 7px;
+}
+.main .com table tr:last-of-type :last-child {
+  border-bottom-right-radius: 7px;
+}
+.main .workexperience,
+.main .educate {
+  height: 125px;
+}
+.main .workexperience .input,
+.main .educate .input {
+  margin-left: 1.5vw;
+  margin-right: 5vw;
+}
+.main .selfappraise {
+  height: 120px;
+}
+.main .selfappraise textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+.main .btn {
+  height: 45px;
+}
+.main .btn input {
+  width: 95%;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 1.5vw;
+  background-color: #6f97bb;
+  border: 1px solid #eae8e8;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.big {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  position: relative;
+  background: #efefef;
+  width: 100%;
+  height: 20%;
+  animation: window-open 0.2s 1;
+}
+.close {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+  width: 40px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-size: 12px;
+  color: black;
+  background-color: #ffffff;
+  text-align: center;
+}
+.firmation {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0;
+  width: 40px;
+  height: 20px;
+  border: 1px solid #0279fb;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #0279fb;
+  text-align: center;
+}
+.linetow,
+.lineone {
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.linetow {
+  top: 92px;
+}
+.genderCol,
+.col {
+  color: black;
+}
+.neirong {
+  border-top: 1px solid rgba(128, 128, 128, 0.462);
+  margin-top: 30px;
+  padding-top: 40px;
+  background-color: #ffffff;
+  height: 100%;
+  transition: all 0.2s linear;
+  color: rgba(0, 0, 0, 0.356);
+}
+.neirong div {
+  width: 100%;
+  text-align: center;
+}
+@keyframes window-open {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 20%;
+  }
+}
